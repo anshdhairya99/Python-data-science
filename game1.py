@@ -3,7 +3,7 @@
 import pgzrun
 from random import randint
 WIDTH = 800
-HEIGHT = 600
+HEIGHT = 500
 score = 0
 music.play("remix")
 
