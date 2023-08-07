@@ -15,7 +15,6 @@ alien = Actor('alien', (-100, HEIGHT//2,))
 ps = 5 # player speed
 es = 2 # enemy speed
 def player_movement():
-    
     global score
     if keyboard.left:
         player.x -= ps
@@ -33,7 +32,7 @@ def player_movement():
     if player.colliderect(coin):
         coin.x = randint(50, WIDTH-50)
         coin.y = randint(50, HEIGHT-50)
-        song.action.play()
+        sounds.action.play()
         score += 1
 
 def enemy_movement():
